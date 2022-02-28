@@ -7,7 +7,7 @@ from xml.etree import ElementTree
 import sys
 
 POM_NS = 'http://maven.apache.org/POM/4.0.0'
-COORDS = ['groupId', 'artifactId', 'version']
+COORDS = ['groupId', 'artifactId', 'version', 'scope']
  
 def _tag(name):
     '''Helper function to construct tag names with the pom URI.'''
@@ -54,4 +54,4 @@ def parse(filename):
     return results
 
 if __name__ == '__main__':
-    print parse(sys.argv[1])
+    print(parse(sys.argv[1]))

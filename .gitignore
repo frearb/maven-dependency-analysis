@@ -33,3 +33,9 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# graphml
+*.graphml
+
+# mac
+.DS_Store
